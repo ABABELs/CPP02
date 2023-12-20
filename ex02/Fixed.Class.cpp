@@ -6,7 +6,7 @@
 /*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 15:45:16 by babels            #+#    #+#             */
-/*   Updated: 2023/12/12 15:01:15 by babels           ###   ########.fr       */
+/*   Updated: 2023/12/13 13:47:15 by babels           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ Fixed &Fixed::operator*(Fixed const &rhs)
 
 Fixed &Fixed::operator/(Fixed const &rhs)
 {
-    this->_rawBits = (this->toFloat() * rhs.toFloat()) / pow(2, Fixed::_fractionalBits);
+    this->_rawBits = this->toFloat() / rhs.toFloat() * (1 << Fixed::_fractionalBits);
     return (*this);
 }
 
