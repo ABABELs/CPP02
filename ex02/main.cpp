@@ -6,7 +6,7 @@
 /*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 11:19:00 by babels            #+#    #+#             */
-/*   Updated: 2023/12/20 14:04:28 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/09 13:09:18 by babels           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,18 +50,4 @@ int main( void )
 	std::cout << Fixed::min(b, c) << " min between " << b << " and " << c << std::endl;
 	
 	return 0;
-	// Fixed		a;
-	// Fixed const	b(Fixed(5.05f) * Fixed(2));
-
-	// std::cout << a << std::endl;
-	// std::cout << ++a << std::endl;
-	// std::cout << a << std::endl;
-	// std::cout << a++ << std::endl;
-	// std::cout << a << std::endl;
-
-	// std::cout << b << std::endl;
-
-	// std::cout << Fixed::max(a, b) << std::endl;
-	
-	// return 0;
 }
